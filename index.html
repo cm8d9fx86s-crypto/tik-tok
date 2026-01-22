@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Marine Perrin – TikTok GBS Graduate Program Dubai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #000000; 
+      --accent: #fe2c55;  
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b6b6b;
+      --card: #f7f9fc;
+      --border: #dfe3eb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Lora", serif;
+    }
+
+    h1, h2, h3, .logo, .hero-role, .section-title {
+      font-family: "Cormorant Garamond", serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 32px 24px 64px;
+      border: 3px solid var(--primary);
+      border-radius: 16px;
+      background: var(--card);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--primary);
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 26px;
+      color: var(--primary);
+    }
+
+    .tagline {
+      font-size: 15px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    nav a {
+      margin-left: 16px;
+      font-size: 15px;
+      color: var(--primary);
+      font-family: "Cormorant Garamond", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* HERO */
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+      gap: 32px;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .hero-title {
+      font-size: 34px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      line-height: 1.3;
+      color: var(--primary);
+    }
+
+    .hero-role {
+      font-size: 20px;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .hero-text {
+      color: var(--muted);
+      margin-bottom: 20px;
+      font-size: 17px;
+    }
+
+    .btn-primary {
+      padding: 12px 24px;
+      background: var(--primary);
+      color: white;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .btn-secondary {
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-size: 15px;
+      border: 1px solid var(--primary);
+      background: white;
+      cursor: pointer;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .hero-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .pill {
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      background: #e8eefc;
+      color: var(--primary);
+      font-family: "Cormorant Garamond", serif;
+    }
+
+    .hero-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .hero-metric-label {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .hero-metric-value {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--primary);
+    }
+
+    .hero-metric-sub {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .hero-badges span {
+      display: inline-block;
+      margin-right: 8px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 16px 18px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: var(--primary);
+    }
+
+    .card-subtitle {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .card-list {
+      font-size: 15px;
+      margin-left: 16px;
+      color: var(--text);
+    }
+
+    /* Contact */
+    .contact-section {
+      text-align: center;
+      padding: 24px 16px;
+      background: var(--primary);
+      color: white;
+      border-radius: 16px;
+    }
+
+    .contact-section p {
+      color: #e5e5e5;
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+
+    .contact-info a {
+      color: var(--accent);
+    }
+
+    footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <header>
+      <div>
+        <div class="logo">MARINE PERRIN</div>
+        <div class="tagline">Graduate Program – Global Business Solutions TikTok</div>
+      </div>
+      <nav>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <h1 class="hero-title">Shaping the future of digital marketing within a fast‑growing global platform.</h1>
+
+        <div class="hero-role">Candidate – TikTok GBS Graduate Program (Dubai)</div>
+
+        <p class="hero-text">
+          Passionate about digital, data and international environments, I am eager to join TikTok’s Global Business Solutions 
+          Graduate Program to develop a full skillset across sales, operations and business analytics. With strong analytical 
+          and commercial experience at Nestlé, I aim to contribute to high‑impact projects, learn from global teams and grow 
+          within an ecosystem where innovation never stops.
+        </p>
+
+        <a href="CV-MARINE.pdf" class="btn-primary" download>Download my CV</a>
+
+        <button class="btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+          Contact me
+        </button>
+
+        <div class="hero-highlights">
+          <span class="pill">Digital Marketing</span>
+          <span class="pill">Data & Analytics</span>
+          <span class="pill">Sales & Operations</span>
+          <span class="pill">International Rotation</span>
+          <span class="pill">Tech & Innovation</span>
+          <span class="pill">Nestlé Experience</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-metric-label">Profile</div>
+        <div class="hero-metric-value">Future Digital Marketing Expert</div>
+        <div class="hero-metric-sub">
+          FMCG experience, performance analysis, cross‑functional coordination and strong interest in tech, 
+          data‑driven environments and global markets.
+        </div>
+        <div class="hero-badges">
+          <span>• Sales & Ops</span>
+          <span>• Business Analytics</span>
+          <span>• Digital Strategy</span>
+          <span>• International Mobility</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h2 class="section-title">Professional Experience</h2>
+
+      <div class="grid grid-3">
+
+        <div class="card">
+          <div class="card-title">Category Manager – Coffee</div>
+          <div class="card-subtitle">Nestlé France – Auchan, Casino, Monoprix, Franprix (2025–2026)</div>
+          <ul class="card-list">
+            <li>Market & performance analysis using NIELSEN, KANTAR, DATAIMPACT.</li>
+            <li>Data‑driven strategic recommendations.</li>
+            <li>Cross‑functional coordination with marketing & sales teams.</li>
+            <li>Shopper journey optimization & visibility improvements.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Strategic Buyer</div>
+          <div class="card-subtitle">Nestlé France (2024–2025)</div>
+          <ul class="card-list">
+            <li>Negotiation & tender management.</li>
+            <li>Risk analysis & compliance.</li>
+            <li>Collaboration with IT, finance & logistics.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Assistant Category Manager</div>
+          <div class="card-subtitle">Nestlé France (2024)</div>
+          <ul class="card-list">
+            <li>Performance reporting & KPI tracking.</li>
+            <li>Planograms & digital optimization.</li>
+            <li>Competitive analysis & market insights.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="grid grid-3">
+
+        <div class="card">
+          <div class="card-title">Digital & Marketing</div>
+          <ul class="card-list">
+            <li>Data‑driven analysis.</li>
+            <li>Understanding of ads & performance logic.</li>
+            <li>Market insights & consumer trends.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Analytics & Performance</div>
+          <ul class="card-list">
+            <li>KPI tracking & reporting.</li>
+            <li>Business analytics.</li>
+            <li>Advanced Excel, Power BI, SAP.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Soft Skills</div>
+          <ul class="card-list">
+            <li>Curiosity & fast learning.</li>
+            <li>International adaptability.</li>
+            <li>Cross‑regional collaboration.</li>
+            <li>Communication & storytelling.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+
+      <div class="grid grid-3">
+        <div class="card"><div class="card-title">Master’s Degree – Innovative Project Management</div><div class="card-subtitle">Rennes School of Business</div></div>
+        <div class="card"><div class="card-title">Master’s Degree – Marketing & Commerce</div><div class="card-subtitle">Rennes School of Business</div></div>
+        <div class="card"><div class="card-title">Erasmus – Dublin</div><div class="card-subtitle">Technological University of Dublin</div></div>
+        <div class="card"><div class="card-title">Bachelor – GlobalTech & Cybersecurity</div><div class="card-subtitle">Rennes School of Business</div></div>
+        <div class="card"><div class="card-title">Scientific Preparatory Class</div><div class="card-subtitle">Lycée Ampère</div></div>
+        <div class="card"><div class="card-title">Scientific Baccalaureate – High Honors</div><div class="card-subtitle">Lycée Daudet</div></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <h2 class="section-title" style="color:white;">Contact</h2>
+      <p>
+        Available to join the TikTok GBS Graduate Program and contribute to high‑impact digital projects.
+      </p>
+      <div class="contact-info">
+        Email : <a href="mailto:perrin.marinelaure@gmail.com">perrin.marinelaure@gmail.com</a><br />
+        Phone : +33 6 82 33 52 08<br />
+        LinkedIn : <a href="https://www.linkedin.com/in/marine-perrin-920197213" target="_blank">/in/marine-perrin</a>
+      </div>
+      <a href="CV-MARINE.pdf" class="btn-primary" download>Download my CV</a>
+    </section>
+
+    <footer>
+      © Marine Perrin – Candidate TikTok GBS Graduate Program Dubai
+    </footer>
+
+  </div>
+</body>
+</html>
